@@ -1,0 +1,65 @@
+<?php
+
+// count() → Size of array
+$numbers = [10, 20, 30];
+
+echo count($numbers); // 3
+echo "<br>";
+
+// array_push() → Add element
+$names = ["Ali", "Ahmed"];
+array_push($names, "Sara");
+print_r($names);
+echo "<br>";
+
+// array_pop() → Remove last element
+$names = ["Ali", "Ahmed", "Sara"];
+array_pop($names);
+print_r($names);
+echo "<br>";
+
+// in_array() → Check value exists
+$names = ["Ali", "Ahmed", "Sara"];
+if (in_array("Ali", $names)) {
+    echo "Found";
+}
+echo "<br>";
+
+// array_merge() → Combine arrays
+$a = [1, 2];
+$b = [3, 4];
+$result = array_merge($a, $b);
+print_r($result);
+echo "<br>";
+
+// sort() → Sort ascending
+$numbers = [5, 2, 8, 1];
+sort($numbers);
+print_r($numbers);
+echo "<br>";
+
+// rsort() → Sort descending
+rsort($numbers);
+print_r($numbers);
+echo "<br>";
+
+// explode() → String → Array
+$text = "apple,banana,mango";
+$array = explode(",", $text);
+print_r($array);
+echo "<br>";
+
+// implode() → Array → String
+$names = ["Ali", "Ahmed"];
+echo implode(", ", $names);
+echo "<br>";
+
+// array_keys() → Get keys
+$user = ["name" => "Ali", "age" => 20];
+print_r(array_keys($user));
+echo "<br>";
+
+// array_values() → Get values
+print_r(array_values($user));
+
+?>
